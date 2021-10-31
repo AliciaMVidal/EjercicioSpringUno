@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 31 oct 2021 18:50:49 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="Productos" table="productos" catalog="tienda_online" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="idCategoria" type="java.lang.Integer">
+            <column name="id_categoria" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="descripcion" />
+        </property>
+        <property name="precio" type="java.lang.Double">
+            <column name="precio" precision="22" scale="0" />
+        </property>
+        <property name="stock" type="java.lang.Integer">
+            <column name="stock" />
+        </property>
+        <property name="fechaAlta" type="string">
+            <column name="fecha_alta" />
+        </property>
+        <property name="fechaBaja" type="string">
+            <column name="fecha_baja" />
+        </property>
+        <property name="impuesto" type="java.lang.Float">
+            <column name="impuesto" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
