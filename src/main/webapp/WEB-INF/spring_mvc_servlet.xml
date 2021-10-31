@@ -12,7 +12,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<!--  Component package to scan -->
-	<context:component-scan base-package="main.java.mvc" />
+	<context:component-scan base-package="mvc" />
 
 	<mvc:annotation-driven/>
 	
@@ -22,7 +22,7 @@
 	<!-- View resolver config -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/view/" />
+		<property name="prefix" value="/WEB-INF/vistas/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
 
