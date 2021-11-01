@@ -3,7 +3,7 @@
   <display-name>EjercicioSpringUno</display-name>
   <!-- Welcome file config -->
   <welcome-file-list>
-    <welcome-file>TestInicial.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
   <!-- dispatcher servlet config -->

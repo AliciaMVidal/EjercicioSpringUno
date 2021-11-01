@@ -15,9 +15,9 @@ public class TestController {
 	
 	
 	//Llamada al fichero
-	@RequestMapping(value="/TestIncial")
+	@RequestMapping(value="/index")
 	public String verPaginaInicio(){
 		//El return es el nombre del fichero al que se esta llamando
-		return "TestInicial";
+		return "index";
 	}
 }
